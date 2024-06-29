@@ -52,8 +52,9 @@ div#formulario > h1 {
     margin-bottom: 10px;
 } 
 
-div#formulario > p {
-    font-size: 0.8em;
+div#formulario > h4 {
+    text-align: center;
+    margin: 15px 0;
 } 
 
 form > div.campo {
@@ -80,7 +81,7 @@ div.campo > i {
 }
 
 div.campo > input {
-    background-color: #94cfcd;
+    background-color: #519f9c;
     font-size: 1em;
     width: calc(100% - 49px);
     height: 80%;
@@ -90,6 +91,7 @@ div.campo > input {
     display: flex;
     align-items: center;
     justify-content: center;
+    outline: none ;
 }
 
 div.campo > input:focus-within {
@@ -107,6 +109,10 @@ form > input[type=submit] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.campo input::placeholder {
+    color: black; 
 }
 
 form > input[type=submit]:hover {
